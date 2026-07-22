@@ -1,0 +1,32 @@
+{
+  "name": "flutterby-studio-site",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://grndlvl.github.io/flutterby/",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/grndlvl/flutterby.git"
+  },
+  "scripts": {
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "lint:html": "html-validate index.html",
+    "lint:css": "stylelint styles.css",
+    "format:check": "prettier --check index.html styles.css script.js README.md tests/a11y/site.spec.js",
+    "lint": "npm run lint:html && npm run lint:css && npm run format:check",
+    "a11y:axe": "playwright test tests/a11y/site.spec.js",
+    "a11y:pa11y": "pa11y-ci --config tests/a11y/pa11yci.json",
+    "a11y": "start-server-and-test serve http://127.0.0.1:4173 'npm run a11y:axe && npm run a11y:pa11y'"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@html-validate/prettier-config": "^3.0.0",
+    "@playwright/test": "^1.52.0",
+    "html-validate": "^9.7.1",
+    "http-server": "^14.1.1",
+    "pa11y-ci": "^4.1.1",
+    "prettier": "^3.5.3",
+    "start-server-and-test": "^2.0.11",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
