@@ -3,6 +3,7 @@
   --forest-dark: #17251e;
   --moss: #647660;
   --sage: #b9c5af;
+  --sage-wash: #e4eadf;
   --blush: #d6b5a8;
   --paper: #f5f0e8;
   --cream: #fffaf2;
@@ -91,7 +92,8 @@ a {
 
 .brand {
   display: block;
-  width: clamp(16rem, 28vw, 24rem);
+  width: clamp(18rem, 32vw, 28rem);
+  flex: 0 1 auto;
   text-decoration: none;
 }
 
@@ -294,6 +296,18 @@ h1 em {
   max-width: 40rem;
 }
 
+.portfolio {
+  max-width: none;
+  background: var(--cream);
+}
+
+.portfolio > * {
+  width: 100%;
+  max-width: 77.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -350,9 +364,10 @@ h1 em {
 }
 
 .testimonial {
+  max-width: none;
+  background: var(--sage-wash);
   text-align: center;
   padding-top: clamp(2rem, 4vw, 3rem);
-  border-top: 1px solid var(--line);
 }
 
 .testimonial-grid {
@@ -668,7 +683,8 @@ footer p {
 
 @media (max-width: 800px) {
   .brand {
-    width: 12rem;
+    width: clamp(13rem, 62vw, 15rem);
+    flex-shrink: 1;
   }
 
   .menu-button {
