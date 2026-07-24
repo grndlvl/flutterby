@@ -856,3 +856,18 @@ footer p {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Reveal-on-scroll — only active once JS adds .js-reveal (never applied under reduced-motion,
+   so content stays visible if JS is off or motion is reduced). */
+.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.js-reveal .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
