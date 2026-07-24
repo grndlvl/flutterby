@@ -36,7 +36,7 @@ The workflow deploys only after HTML/CSS/format linting and axe-core/Pa11y/keybo
 
 The hero and most portfolio images use owner-supplied originals from `research/portfolio/`; the wedding image is an uncropped original harvested from a public Instagram post supplied by the owner. The newborn twins portrait is an owner-supplied original downloaded from Amber's Facebook post (`research/portfolio/481300829_1391292948823566_2686417284140265288_n.jpg`). Optimized JPG and WebP exports live in `images/`.
 
-The active logo source is `research/ChatGPT Image Jul 22, 2026, 08_47_19 AM.png`; its light checkerboard background is removed during export for transparent PNG and WebP header assets. The footer mark uses a separate icon-only variant, `research/ChatGPT Image Jul 22, 2026, 08_52_53 AM.png` (same checkerboard-removal treatment, then cropped to content and exported as `images/footer-mark.png`/`.webp`).
+The active logo source is `research/ChatGPT Image Jul 23, 2026, 09_47_53 PM.png`; its light checkerboard background is removed during export for transparent PNG and WebP header assets. The footer mark uses a separate icon-only variant, `research/ChatGPT Image Jul 22, 2026, 08_52_53 AM.png` (same checkerboard-removal treatment, then cropped to content and exported as `images/footer-mark.png`/`.webp`).
 
 Copy is based on Amber’s supplied introduction and public Flutterby Studio Facebook materials. Photography, logo, current-promotion art, and pricing-guide source material were supplied/harvested from Flutterby Studio’s Facebook presence and retained in `design/source/`; optimized exports are in `images/`. The site does not use third-party photography.
 

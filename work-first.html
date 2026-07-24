@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flutterby Studio | Portrait &amp; Family Photography</title>
+    <title>Flutterby Studio — Layout B (Work-first, recommended)</title>
     <meta
       name="description"
       content="Warm, artful portraits by Amber—photography made for real personalities, honest connection, and images you love yourself in. Serving the CSRA: Augusta, Grovetown &amp; North Augusta."
@@ -59,6 +59,28 @@
         "areaServed": ["Augusta, GA", "Grovetown, GA", "North Augusta, SC", "CSRA"]
       }
     </script>
+    <style>
+      /* Preview label — not part of the real site, only marks this comparison page */
+      .preview-flag {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.25rem 0.9rem;
+        padding: 0.55rem clamp(1rem, 4vw, 4rem);
+        background: #17251e;
+        color: #fffaf2;
+        font-size: 0.8rem;
+      }
+      .preview-flag strong {
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.72rem;
+        color: #b9c5af;
+      }
+      .preview-flag span {
+        opacity: 0.85;
+      }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -77,6 +99,9 @@
         ><a class="nav-cta" href="#contact">Let’s talk</a>
       </nav>
     </header>
+    <div class="preview-flag">
+      <strong>Layout B — Work-first</strong><span>Portfolio leads · Amber’s story after the work (recommended)</span>
+    </div>
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
@@ -102,6 +127,32 @@
           /></picture>
           <figcaption>Real life is already beautiful.</figcaption>
         </figure>
+      </section>
+
+      <section class="offer" aria-labelledby="offer-title">
+        <div>
+          <p class="eyebrow">Now booking</p>
+          <h2 id="offer-title">A little extra magic, for a little while.</h2>
+          <p>
+            Amber is offering four discounted sessions: pay only the $25 retainer to secure one. Regular session pricing
+            begins after these four spots are claimed. Availability may change, so confirm your spot with Amber.
+          </p>
+          <div class="button-row">
+            <a class="button button-light" href="#contact">Reserve your spot</a
+            ><a class="text-link" href="https://www.facebook.com/share/p/1bzur8JRTt/"
+              >View full offer details <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <picture
+          ><source srcset="images/current-promotion.webp" type="image/webp" />
+          <img
+            src="images/current-promotion.jpg"
+            width="600"
+            height="776"
+            alt="Promotion for four discounted sessions with a $25 booking retainer"
+            loading="lazy"
+        /></picture>
       </section>
 
       <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title">
@@ -242,32 +293,6 @@
         </div>
       </section>
 
-      <section class="offer" aria-labelledby="offer-title">
-        <div>
-          <p class="eyebrow">Now booking</p>
-          <h2 id="offer-title">A little extra magic, for a little while.</h2>
-          <p>
-            Amber is offering four discounted sessions: pay only the $25 retainer to secure one. Regular session pricing
-            begins after these four spots are claimed. Availability may change, so confirm your spot with Amber.
-          </p>
-          <div class="button-row">
-            <a class="button button-light" href="#contact">Reserve your spot</a
-            ><a class="text-link" href="https://www.facebook.com/share/p/1bzur8JRTt/"
-              >View full offer details <span aria-hidden="true">↗</span></a
-            >
-          </div>
-        </div>
-        <picture
-          ><source srcset="images/current-promotion.webp" type="image/webp" />
-          <img
-            src="images/current-promotion.jpg"
-            width="600"
-            height="776"
-            alt="Promotion for four discounted sessions with a $25 booking retainer"
-            loading="lazy"
-        /></picture>
-      </section>
-
       <section class="services" id="services" aria-labelledby="services-title">
         <div class="wrap">
           <header class="section-heading">
@@ -314,37 +339,6 @@
         </div>
       </section>
 
-      <section class="about" id="about" aria-labelledby="about-title">
-        <div class="about-image">
-          <picture
-            ><source srcset="images/amber.webp" type="image/webp" />
-            <img
-              src="images/amber.jpg"
-              width="2344"
-              height="3125"
-              alt="Amber resting beside a stack of books decorated with purple flowers"
-              loading="lazy"
-          /></picture>
-        </div>
-        <div>
-          <p class="eyebrow">Meet the photographer</p>
-          <h2 id="about-title">Hi, I’m Amber.</h2>
-          <p>
-            I’m a stay-at-home mom to two girls, an artist, and the person behind the camera at Flutterby Studio, based
-            in Grovetown and serving families throughout Augusta, North Augusta, and the wider CSRA. As a little girl, I
-            dreamed of photographing for <em>National Geographic</em> and traveling the world. Over the last seven
-            years, I’ve fallen just as deeply in love with photographing people—their personalities, emotions, and
-            connections.
-          </p>
-          <p>
-            I know what it’s like to struggle with photos of yourself. My seven-year-old took a portrait of me that made
-            me cry because I loved it so much. That feeling—surprise, recognition, and a little more love for
-            yourself—is what I hope every client takes home.
-          </p>
-          <p class="signature">Amber</p>
-        </div>
-      </section>
-
       <section class="reassurance wrap" aria-labelledby="reassurance-title">
         <div>
           <p class="eyebrow">“I’m not photogenic.”</p>
@@ -376,6 +370,37 @@
             </div>
           </li>
         </ol>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-image">
+          <picture
+            ><source srcset="images/amber.webp" type="image/webp" />
+            <img
+              src="images/amber.jpg"
+              width="2344"
+              height="3125"
+              alt="Amber resting beside a stack of books decorated with purple flowers"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div>
+          <p class="eyebrow">Meet the photographer</p>
+          <h2 id="about-title">Hi, I’m Amber.</h2>
+          <p>
+            I’m a stay-at-home mom to two girls, an artist, and the person behind the camera at Flutterby Studio, based
+            in Grovetown and serving families throughout Augusta, North Augusta, and the wider CSRA. As a little girl, I
+            dreamed of photographing for <em>National Geographic</em> and traveling the world. Over the last seven
+            years, I’ve fallen just as deeply in love with photographing people—their personalities, emotions, and
+            connections.
+          </p>
+          <p>
+            I know what it’s like to struggle with photos of yourself. My seven-year-old took a portrait of me that made
+            me cry because I loved it so much. That feeling—surprise, recognition, and a little more love for
+            yourself—is what I hope every client takes home.
+          </p>
+          <p class="signature">Amber</p>
+        </div>
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
