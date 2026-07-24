@@ -47,18 +47,121 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
+        "@type": ["ProfessionalService", "LocalBusiness"],
+        "@id": "https://grndlvl.github.io/flutterby/#business",
         "name": "Flutterby Studio",
-        "description": "Portrait, family, mini-session, styled-set, and wedding photography by Amber.",
+        "description": "Warm, artful portrait, family, mini-session, studio, styled-set, and wedding photography by Amber, serving Augusta, Grovetown, North Augusta, and the wider CSRA.",
         "url": "https://grndlvl.github.io/flutterby/",
         "image": "https://grndlvl.github.io/flutterby/images/og-image.jpg",
+        "logo": "https://grndlvl.github.io/flutterby/images/logo.png",
         "email": "flutterbystudio13@gmail.com",
-        "sameAs": ["https://www.facebook.com/flutterbystudio13", "https://www.instagram.com/flutterbystudioga/"],
-        "founder": { "@type": "Person", "name": "Amber" },
         "priceRange": "$75–$2000+",
-        "areaServed": ["Augusta, GA", "Grovetown, GA", "North Augusta, SC", "CSRA"]
+        "currenciesAccepted": "USD",
+        "founder": { "@type": "Person", "name": "Amber", "jobTitle": "Photographer" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Grovetown",
+          "addressRegion": "GA",
+          "postalCode": "30813",
+          "addressCountry": "US"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 33.4507, "longitude": -82.1943 },
+        "areaServed": [
+          { "@type": "City", "name": "Augusta, GA" },
+          { "@type": "City", "name": "Grovetown, GA" },
+          { "@type": "City", "name": "North Augusta, SC" },
+          { "@type": "AdministrativeArea", "name": "Central Savannah River Area (CSRA)" }
+        ],
+        "knowsAbout": [
+          "Portrait photography",
+          "Family photography",
+          "Newborn photography",
+          "Couples photography",
+          "Studio photography",
+          "Wedding photography"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "description": "By appointment"
+        },
+        "sameAs": ["https://www.facebook.com/flutterbystudio13", "https://www.instagram.com/flutterbystudioga/"],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "100.00",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Portrait & couples session",
+              "description": "One hour session."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "150.00",
+            "itemOffered": { "@type": "Service", "name": "Family session", "description": "Two hour session." }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "75.00",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mini session",
+              "description": "Three or more shared images on designated dates and times."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "125.00",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Studio backdrop & lighting portraits",
+              "description": "One hour studio session."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "200.00",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private styled set with props",
+              "description": "One hour styled session."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "USD",
+              "price": "2000.00",
+              "minPrice": "2000.00"
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wedding photography",
+              "description": "Six hours of coverage, a digital gallery, USB drive, and personal printing and posting rights."
+            }
+          }
+        ]
       }
     </script>
+    <!--
+      TODO before launch: re-enable this FAQPage schema once Amber's real answers replace the
+      lorem placeholders in the visible FAQ. Each "text" MUST match the on-page answer word-for-word.
+      Final questions (answers pending):
+        1. How much does a session cost?
+        2. How many edited photos do I get, and how soon after?
+        3. Do you shoot on location, in a studio, or both?
+        4. Can I order prints or albums, or is it digital only?
+        5. What's your reschedule and bad-weather policy?
+        6. I'm not photogenic — how does a session actually work?
+    -->
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -376,6 +479,62 @@
             </div>
           </li>
         </ol>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="wrap">
+          <header class="section-heading">
+            <p class="eyebrow">Good to know</p>
+            <h2 id="faq-title">Questions, answered.</h2>
+            <p>The details most people ask about before reaching out.</p>
+          </header>
+          <!-- PLACEHOLDER answers (lorem ipsum) — replace each with Amber's real answer before launch.
+               Questions are final; when real answers land, also re-enable the FAQPage schema in <head>. -->
+          <div class="faq-list">
+            <details>
+              <summary>How much does a session cost?</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+              </p>
+            </details>
+            <details>
+              <summary>How many edited photos do I get, and how soon after?</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </details>
+            <details>
+              <summary>Do you shoot on location, in a studio, or both?</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </details>
+            <details>
+              <summary>Can I order prints or albums, or is it digital only?</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </details>
+            <details>
+              <summary>What’s your reschedule and bad-weather policy?</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+              </p>
+            </details>
+            <details>
+              <summary>I’m not photogenic—how does a session actually work?</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est qui dolorem ipsum quia
+                dolor sit amet, consectetur, adipisci velit.
+              </p>
+            </details>
+          </div>
+        </div>
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">

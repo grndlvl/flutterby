@@ -1,0 +1,34 @@
+# LAUNCH VERSION — at go-live, rename this file to robots.txt (replacing the
+# current pre-launch robots.txt that blocks everything), AND remove the
+# <meta name="robots" content="noindex, nofollow"> tag from index.html.
+# Until both of those happen, the site stays private.
+
+User-agent: *
+Allow: /
+
+# AI answer engines — explicitly welcomed (these drive citations/recommendations)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://grndlvl.github.io/flutterby/sitemap.xml

@@ -681,6 +681,55 @@ footer p {
   stroke: none;
 }
 
+.faq {
+  /* pale sage — separates cleanly from the paper reassurance above and contrasts into the dark contact below */
+  background: var(--sage-wash);
+}
+
+.faq-list {
+  border-top: 1px solid var(--line);
+  max-width: 900px;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.4rem 0;
+  font-family: var(--display);
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  line-height: 1.15;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: '+';
+  flex: 0 0 auto;
+  font-family: var(--body);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--moss);
+}
+
+.faq details[open] summary::after {
+  content: '–';
+}
+
+.faq details p {
+  margin: 0 0 1.5rem;
+  max-width: 62ch;
+}
+
 @media (max-width: 800px) {
   .brand {
     width: clamp(13rem, 62vw, 15rem);
