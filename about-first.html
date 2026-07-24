@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flutterby Studio — Layout A (About-first)</title>
+    <meta
+      name="description"
+      content="Warm, artful portraits by Amber—photography made for real personalities, honest connection, and images you love yourself in. Serving the CSRA: Augusta, Grovetown &amp; North Augusta."
+    />
+    <meta name="theme-color" content="#24372d" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://grndlvl.github.io/flutterby/" />
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Flutterby Studio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Flutterby Studio | Artful portraits, honest connection" />
+    <meta
+      property="og:description"
+      content="Relaxed portrait photography that captures who you really are. Serving Augusta, Grovetown, North Augusta &amp; the CSRA."
+    />
+    <meta property="og:url" content="https://grndlvl.github.io/flutterby/" />
+    <meta property="og:image" content="https://grndlvl.github.io/flutterby/images/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Flutterby Studio photography by Amber" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flutterby Studio | Artful portraits, honest connection" />
+    <meta
+      name="twitter:description"
+      content="Relaxed portrait photography that captures who you really are. Serving Augusta, Grovetown, North Augusta &amp; the CSRA."
+    />
+    <meta name="twitter:image" content="https://grndlvl.github.io/flutterby/images/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Flutterby Studio photography by Amber" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Italiana&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Flutterby Studio",
+        "description": "Portrait, family, mini-session, styled-set, and wedding photography by Amber.",
+        "url": "https://grndlvl.github.io/flutterby/",
+        "image": "https://grndlvl.github.io/flutterby/images/og-image.jpg",
+        "email": "flutterbystudio13@gmail.com",
+        "sameAs": ["https://www.facebook.com/flutterbystudio13", "https://www.instagram.com/flutterbystudioga/"],
+        "founder": { "@type": "Person", "name": "Amber" },
+        "priceRange": "$75–$2000+",
+        "areaServed": ["Augusta, GA", "Grovetown, GA", "North Augusta, SC", "CSRA"]
+      }
+    </script>
+    <style>
+      /* Preview label — not part of the real site, only marks this comparison page */
+      .preview-flag {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.25rem 0.9rem;
+        padding: 0.55rem clamp(1rem, 4vw, 4rem);
+        background: #17251e;
+        color: #fffaf2;
+        font-size: 0.8rem;
+      }
+      .preview-flag strong {
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.72rem;
+        color: #b9c5af;
+      }
+      .preview-flag span {
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Flutterby Studio home">
+        <picture>
+          <source srcset="images/logo.webp" type="image/webp" />
+          <img src="images/logo.png" width="2172" height="724" alt="" />
+        </picture>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Open menu</span><span aria-hidden="true">Menu</span>
+      </button>
+      <nav id="primary-nav" aria-label="Primary">
+        <a href="#about">Meet Amber</a><a href="#portfolio">Portfolio</a><a href="#services">Sessions</a
+        ><a class="nav-cta" href="#contact">Let’s talk</a>
+      </nav>
+    </header>
+    <div class="preview-flag">
+      <strong>Layout A — About-first</strong
+      ><span>Amber’s story leads · portfolio &amp; sessions after (as requested)</span>
+    </div>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Photography by Amber</p>
+          <h1 id="hero-title">Come as you are.<br /><em>Leave loving what you see.</em></h1>
+          <p class="lede">
+            Artful portraits filled with wonder, warmth, and the honest little moments that make you—you.
+          </p>
+          <div class="button-row">
+            <a class="button" href="#contact">Plan your session</a
+            ><a class="text-link" href="#portfolio">See the work <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <picture
+            ><source srcset="images/hero-motherhood.webp" type="image/webp" />
+            <img
+              src="images/hero-motherhood.jpg"
+              width="1440"
+              height="1800"
+              alt="Mother walking through a wildflower field with her two young children"
+              fetchpriority="high"
+          /></picture>
+          <figcaption>Real life is already beautiful.</figcaption>
+        </figure>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-image">
+          <picture
+            ><source srcset="images/amber.webp" type="image/webp" />
+            <img
+              src="images/amber.jpg"
+              width="2344"
+              height="3125"
+              alt="Amber resting beside a stack of books decorated with purple flowers"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div>
+          <p class="eyebrow">Meet the photographer</p>
+          <h2 id="about-title">Hi, I’m Amber.</h2>
+          <p>
+            I’m a stay-at-home mom to two girls, an artist, and the person behind the camera at Flutterby Studio, based
+            in Grovetown and serving families throughout Augusta, North Augusta, and the wider CSRA. As a little girl, I
+            dreamed of photographing for <em>National Geographic</em> and traveling the world. Over the last seven
+            years, I’ve fallen just as deeply in love with photographing people—their personalities, emotions, and
+            connections.
+          </p>
+          <p>
+            I know what it’s like to struggle with photos of yourself. My seven-year-old took a portrait of me that made
+            me cry because I loved it so much. That feeling—surprise, recognition, and a little more love for
+            yourself—is what I hope every client takes home.
+          </p>
+          <p class="signature">Amber</p>
+        </div>
+      </section>
+
+      <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title">
+        <header class="section-heading">
+          <p class="eyebrow">The portfolio</p>
+          <h2 id="portfolio-title">Stories, not poses.</h2>
+          <p>Soft glances, wild joy, quiet confidence—the moments worth keeping rarely need a script.</p>
+        </header>
+        <div class="gallery">
+          <figure class="gallery-tall">
+            <picture
+              ><source srcset="images/portfolio-pumpkin.webp" type="image/webp" />
+              <img
+                src="images/portfolio-pumpkin.jpg"
+                width="1440"
+                height="1800"
+                alt="Two children in handmade pumpkin costumes during an autumn portrait session"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure>
+            <picture
+              ><source srcset="images/portfolio-lake-portrait.webp" type="image/webp" />
+              <img
+                src="images/portfolio-lake-portrait.jpg"
+                width="1440"
+                height="1800"
+                alt="Natural-light portrait beside a quiet lake at sunset"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure class="gallery-wide">
+            <picture
+              ><source srcset="images/portfolio-pink-flowers.webp" type="image/webp" />
+              <img
+                src="images/portfolio-pink-flowers.jpg"
+                width="1440"
+                height="960"
+                alt="Creative portrait with pink hair resting among soft fabric and tiny flowers"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure>
+            <picture
+              ><source srcset="images/portfolio-mother-daughter.webp" type="image/webp" />
+              <img
+                src="images/portfolio-mother-daughter.jpg"
+                width="1440"
+                height="1795"
+                alt="Mother lifting her smiling young daughter beneath golden autumn trees"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure>
+            <picture
+              ><source srcset="images/portfolio-bw-flowers.webp" type="image/webp" />
+              <img
+                src="images/portfolio-bw-flowers.jpg"
+                width="1440"
+                height="1800"
+                alt="Black-and-white portrait of a woman holding a small bouquet by the water"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure>
+            <picture
+              ><source srcset="images/portfolio-mother-child.webp" type="image/webp" />
+              <img
+                src="images/portfolio-mother-child.jpg"
+                width="1440"
+                height="1800"
+                alt="Mother smiling with her young daughter in a wildflower field"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure>
+            <picture
+              ><source srcset="images/portfolio-books-baby.webp" type="image/webp" />
+              <img
+                src="images/portfolio-books-baby.jpg"
+                width="1440"
+                height="1920"
+                alt="Mother laughing as her baby reaches toward her over a stack of books and purple flowers"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure class="gallery-wide">
+            <picture
+              ><source srcset="images/ig-Ck53o_uuuDC.webp" type="image/webp" />
+              <img
+                src="images/ig-Ck53o_uuuDC.jpg"
+                width="1440"
+                height="1795"
+                alt="Black-and-white close portrait of a newly married couple kissing"
+                loading="lazy"
+            /></picture>
+          </figure>
+          <figure>
+            <picture
+              ><source srcset="images/portfolio-newborn-twins.webp" type="image/webp" />
+              <img
+                src="images/portfolio-newborn-twins.jpg"
+                width="1440"
+                height="1800"
+                alt="Newborn twins swaddled side by side, sleeping"
+                loading="lazy"
+            /></picture>
+          </figure>
+        </div>
+        <div class="gallery-more">
+          <p>There’s always more unfolding.</p>
+          <div>
+            <a href="https://www.instagram.com/flutterbystudioga/"
+              >See more on Instagram <span aria-hidden="true">↗</span></a
+            >
+            <a href="https://www.facebook.com/flutterbystudio13"
+              >See more on Facebook <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="wrap">
+          <header class="section-heading">
+            <p class="eyebrow">Ways to remember</p>
+            <h2 id="services-title">Choose your kind of story.</h2>
+            <p>Every session includes a delivered digital gallery plus posting and personal printing rights.</p>
+          </header>
+          <div class="service-grid">
+            <article>
+              <span>01</span>
+              <h3>Portraits &amp; couples</h3>
+              <p>An hour to wander, connect, and make something that feels like you.</p>
+              <strong>$100 · 1 hour</strong>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Family</h3>
+              <p>Room for the wiggles, the laughter, and everyone’s real personality.</p>
+              <strong>$150 · 2 hours</strong>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Mini sessions</h3>
+              <p>Three or more shared images, delivered on the days and times Amber sets.</p>
+              <strong>$75</strong>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Studio &amp; styled</h3>
+              <p>Backdrop-and-lighting portraits start at $125; private styled sets with props are $200.</p>
+              <strong>1 hour</strong>
+            </article>
+            <article>
+              <span>05</span>
+              <h3>Weddings</h3>
+              <p>Six hours of coverage, a digital gallery, USB drive, and personal printing and posting rights.</p>
+              <strong>Starting at $2,000</strong>
+            </article>
+          </div>
+          <p class="fine-print">
+            A non-refundable retainer is due at booking: $25 for sessions or $200 for weddings. Remaining fees and
+            extras are due the day of service. Ask Amber about albums and USB drives.
+          </p>
+        </div>
+      </section>
+
+      <section class="testimonial wrap" aria-labelledby="testimonial-title">
+        <p class="eyebrow" id="testimonial-title">In their words</p>
+        <div class="testimonial-grid">
+          <blockquote>
+            <p>
+              “Amber… girl I am going through these photos with tears in my eyes. They are so freaking beautiful. You
+              have such a gift… I am going to cherish these forever. Words can’t express how grateful I am for you.
+              Seriously, I am awestruck by them.”
+            </p>
+            <cite>— A Flutterby Studio client</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Thank you so very much, these came out amazing. You did a wonderful job!!”</p>
+            <cite>— A Flutterby Studio client</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="offer" aria-labelledby="offer-title">
+        <div>
+          <p class="eyebrow">Now booking</p>
+          <h2 id="offer-title">A little extra magic, for a little while.</h2>
+          <p>
+            Amber is offering four discounted sessions: pay only the $25 retainer to secure one. Regular session pricing
+            begins after these four spots are claimed. Availability may change, so confirm your spot with Amber.
+          </p>
+          <div class="button-row">
+            <a class="button button-light" href="#contact">Reserve your spot</a
+            ><a class="text-link" href="https://www.facebook.com/share/p/1bzur8JRTt/"
+              >View full offer details <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <picture
+          ><source srcset="images/current-promotion.webp" type="image/webp" />
+          <img
+            src="images/current-promotion.jpg"
+            width="600"
+            height="776"
+            alt="Promotion for four discounted sessions with a $25 booking retainer"
+            loading="lazy"
+        /></picture>
+      </section>
+
+      <section class="reassurance wrap" aria-labelledby="reassurance-title">
+        <div>
+          <p class="eyebrow">“I’m not photogenic.”</p>
+          <h2 id="reassurance-title">You don’t have to know what to do.</h2>
+          <p>
+            That’s Amber’s job. Sessions are gentle, playful, and shaped around you—not a performance for the camera.
+          </p>
+        </div>
+        <ol>
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Tell Amber your idea</h3>
+              <p>Share who’s coming, what you love, and what makes cameras feel awkward.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Relax into the moment</h3>
+              <p>You’ll get easy direction when you need it and space to simply be together.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>See yourself differently</h3>
+              <p>Receive a digital gallery made to help you recognize the beauty everyone else already sees.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Your turn</p>
+          <h2 id="contact-title">Let’s make something you’ll love.</h2>
+          <p>Have a question, a half-formed idea, or a date in mind? Amber would genuinely love to hear from you.</p>
+          <!-- TODO before launch: sign up at https://web3forms.com and replace YOUR_WEB3FORMS_ACCESS_KEY with a real access key -->
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New inquiry from the Flutterby Studio website" />
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" aria-hidden="true" />
+            <div class="form-row">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-row">
+              <label for="contact-message">What are you dreaming up?</label>
+              <textarea id="contact-message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="button button-light" type="submit">Send to Amber</button>
+          </form>
+        </div>
+        <div class="contact-actions">
+          <p class="contact-alt">Prefer email or social?</p>
+          <nav class="contact-socials" aria-label="Contact Amber on social media">
+            <a href="https://www.instagram.com/flutterbystudioga/">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle class="social-dot" cx="17.5" cy="6.5" r="1"></circle>
+              </svg>
+              <span>Follow on Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/flutterbystudio13">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v3H6v4h3v8h4v-8h3.5l.5-4h-4V9c0-.7.3-1 1-1Z"></path>
+              </svg>
+              <span>Message on Facebook</span>
+            </a>
+          </nav>
+          <p class="contact-email"><a href="mailto:flutterbystudio13@gmail.com">flutterbystudio13@gmail.com</a></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="footer-home" href="#top" aria-label="Flutterby Studio home">
+        <picture>
+          <source srcset="images/footer-mark.webp" type="image/webp" />
+          <img src="images/footer-mark.png" width="400" height="400" alt="" />
+        </picture>
+      </a>
+      <p>Serving Augusta, Grovetown, North Augusta &amp; the CSRA.</p>
+      <p>© <span id="year">2026</span> Flutterby Studio</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
