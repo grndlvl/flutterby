@@ -10,8 +10,7 @@ Research date: 2026-07-22
 - Current focus: photography services; booking is handled by direct message.
 - Contact email shown on the promotion artwork: flutterbystudio13@gmail.com.
 - Amber's goal is to make clients—especially people who usually dislike photos of themselves—feel seen and love their photographs.
-- Current public promotion: four discounted sessions requiring only the $25 retainer to book; availability must be confirmed.
-- Public pricing guide: portrait/couples $100/hour; family $150 for two hours; mini sessions $75 for 3+ shared-date photographs/20 minutes; backdrop portraits/headshots $125/hour; private stylized set $200/hour; weddings from $2,000. The guide also lists a non-refundable retainer and optional USB/photo-album extras. Confirm all terms before launch.
+- Public pricing: portrait/couples $100/hour; family $150 for two hours; seasonal mini sessions $50 for 20 minutes; backdrop portraits/headshots $125/hour; private stylized set $200/hour. The guide also lists a non-refundable retainer and optional USB/photo-album extras. Confirm all terms before launch.
 
 ## Brand assets and palette
 

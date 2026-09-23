@@ -48,8 +48,7 @@ Amber’s About portrait is from her confirmed Instagram post at `https://www.in
 - The configured public URL is `https://grndlvl.github.io/flutterby/`; update canonical, Open Graph, JSON-LD, and sitemap URLs together if the domain changes.
 - Confirm the repository’s default deployment branch is `main`.
 - Confirm `flutterbystudio13@gmail.com` is the preferred public email and the Facebook and Instagram profiles are the preferred contact routes.
-- Confirm the promotion at the linked Facebook post is still current; remove or replace it when it expires.
-- Confirm all prices, inclusions, retainer terms, album/USB extras, and wedding coverage remain current. They were transcribed conservatively from the supplied pricing guide.
+- Confirm all prices, inclusions, retainer terms, and album/USB extras remain current. They were transcribed conservatively from the supplied pricing guide.
 - Confirm whether “Flutterby Studio,” “Flutterby Photography by Amber,” or another name is the official display/business name.
 - Confirm the service area now claimed for local SEO (Augusta, Grovetown, North Augusta, and the CSRA generally) is accurate and complete.
 - Set a real Web3Forms access key in the contact form (search `index.html` for `YOUR_WEB3FORMS_ACCESS_KEY`) — get one free at https://web3forms.com before launch, or swap the form for a different backend.

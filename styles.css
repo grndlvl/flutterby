@@ -237,38 +237,16 @@ h1 em {
   padding: 0.5rem 1rem;
 }
 
-.offer {
-  background: var(--forest);
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr minmax(260px, 420px);
-  gap: clamp(3rem, 8vw, 9rem);
-  align-items: center;
-  padding: clamp(3rem, 7vw, 7rem) clamp(1rem, 10vw, 12rem);
-}
-
-.offer .eyebrow,
 .contact .eyebrow {
   color: var(--sage);
 }
 
-.offer h2,
 .section-heading h2,
 .reassurance h2,
 .about h2,
 .contact h2 {
   font-size: clamp(2.7rem, 5vw, 5rem);
   margin-bottom: 1.3rem;
-}
-
-.offer p {
-  max-width: 38rem;
-}
-
-.offer picture {
-  display: block;
-  aspect-ratio: 600/776;
-  transform: rotate(2deg);
 }
 
 .button-light {
@@ -327,6 +305,10 @@ h1 em {
 
 .gallery-wide {
   grid-column: span 2;
+}
+
+.gallery-focus-face img {
+  object-position: center 70%;
 }
 
 .gallery img {
@@ -413,24 +395,18 @@ h1 em {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
 }
 
 .service-grid article {
-  grid-column: span 2;
   min-height: 280px;
   padding: 2rem;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-}
-
-.service-grid article:nth-child(4),
-.service-grid article:nth-child(5) {
-  grid-column: span 3;
 }
 
 .service-grid article > span {
@@ -560,15 +536,6 @@ h1 em {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--sage);
-}
-
-.contact-email {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
-.contact-email a {
-  text-decoration-color: var(--sage);
 }
 
 .contact-form {
@@ -762,7 +729,6 @@ footer p {
   }
 
   .hero,
-  .offer,
   .about,
   .contact,
   .reassurance {
@@ -777,10 +743,6 @@ footer p {
     max-height: 520px;
   }
 
-  .offer picture {
-    max-width: 420px;
-  }
-
   .gallery {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 280px;
@@ -788,15 +750,6 @@ footer p {
 
   .service-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .service-grid article,
-  .service-grid article:nth-child(4) {
-    grid-column: span 1;
-  }
-
-  .service-grid article:nth-child(5) {
-    grid-column: span 2;
   }
 
   .about-image {
@@ -817,12 +770,6 @@ footer p {
 @media (max-width: 520px) {
   .service-grid {
     grid-template-columns: 1fr;
-  }
-
-  .service-grid article,
-  .service-grid article:nth-child(4),
-  .service-grid article:nth-child(5) {
-    grid-column: span 1;
   }
 
   .gallery {
