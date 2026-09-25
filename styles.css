@@ -697,7 +697,7 @@ footer p {
   max-width: 62ch;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .brand {
     width: clamp(13rem, 62vw, 15rem);
     flex-shrink: 1;
@@ -727,7 +727,9 @@ footer p {
   .site-header nav a {
     padding: 0.6rem;
   }
+}
 
+@media (max-width: 800px) {
   .hero,
   .about,
   .contact,
