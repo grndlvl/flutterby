@@ -9,8 +9,8 @@
       content="Warm, artful portraits by Amber—photography made for real personalities, honest connection, and images you love yourself in. Serving the CSRA: Augusta, Grovetown &amp; North Augusta."
     />
     <meta name="theme-color" content="#24372d" />
-    <meta name="robots" content="noindex, nofollow" />
-    <link rel="canonical" href="https://grndlvl.github.io/flutterby/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://flutterbystudioga.com/" />
     <link rel="icon" href="images/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
@@ -23,8 +23,8 @@
       property="og:description"
       content="Relaxed portrait photography that captures who you really are. Serving Augusta, Grovetown, North Augusta &amp; the CSRA."
     />
-    <meta property="og:url" content="https://grndlvl.github.io/flutterby/" />
-    <meta property="og:image" content="https://grndlvl.github.io/flutterby/images/og-image.jpg" />
+    <meta property="og:url" content="https://flutterbystudioga.com/" />
+    <meta property="og:image" content="https://flutterbystudioga.com/images/og-image.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -35,7 +35,7 @@
       name="twitter:description"
       content="Relaxed portrait photography that captures who you really are. Serving Augusta, Grovetown, North Augusta &amp; the CSRA."
     />
-    <meta name="twitter:image" content="https://grndlvl.github.io/flutterby/images/og-image.jpg" />
+    <meta name="twitter:image" content="https://flutterbystudioga.com/images/og-image.jpg" />
     <meta name="twitter:image:alt" content="Flutterby Studio photography by Amber" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,90 +47,107 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": ["ProfessionalService", "LocalBusiness"],
-        "@id": "https://grndlvl.github.io/flutterby/#business",
-        "name": "Flutterby Studio",
-        "description": "Warm, artful portrait, family, mini-session, studio, and styled-set photography by Amber, serving Augusta, Grovetown, North Augusta, and the wider CSRA.",
-        "url": "https://grndlvl.github.io/flutterby/",
-        "image": "https://grndlvl.github.io/flutterby/images/og-image.jpg",
-        "logo": "https://grndlvl.github.io/flutterby/images/logo.png",
-        "email": "flutterbystudio13@gmail.com",
-        "priceRange": "$50–$200+",
-        "currenciesAccepted": "USD",
-        "founder": { "@type": "Person", "name": "Amber", "jobTitle": "Photographer" },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Grovetown",
-          "addressRegion": "GA",
-          "postalCode": "30813",
-          "addressCountry": "US"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": 33.4507, "longitude": -82.1943 },
-        "areaServed": [
-          { "@type": "City", "name": "Augusta, GA" },
-          { "@type": "City", "name": "Grovetown, GA" },
-          { "@type": "City", "name": "North Augusta, SC" },
-          { "@type": "AdministrativeArea", "name": "Central Savannah River Area (CSRA)" }
-        ],
-        "knowsAbout": [
-          "Portrait photography",
-          "Family photography",
-          "Newborn photography",
-          "Couples photography",
-          "Studio photography"
-        ],
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "description": "By appointment"
-        },
-        "sameAs": ["https://www.facebook.com/flutterbystudio13", "https://www.instagram.com/flutterbystudioga/"],
-        "makesOffer": [
+        "@graph": [
           {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "100.00",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Portrait & couples session",
-              "description": "One hour session."
-            }
+            "@type": "WebPage",
+            "@id": "https://flutterbystudioga.com/#webpage",
+            "url": "https://flutterbystudioga.com/",
+            "name": "Flutterby Studio | Portrait & Family Photography",
+            "description": "Warm, artful portraits by Amber—photography made for real personalities, honest connection, and images you love yourself in.",
+            "datePublished": "2026-09-26",
+            "dateModified": "2026-09-26",
+            "lastReviewed": "2026-09-26",
+            "inLanguage": "en-US",
+            "mainEntity": { "@id": "https://flutterbystudioga.com/#business" }
           },
           {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "150.00",
-            "itemOffered": { "@type": "Service", "name": "Family session", "description": "Two hour session." }
-          },
-          {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "50.00",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Mini session",
-              "description": "A 20-minute session offered seasonally."
-            }
-          },
-          {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "125.00",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Studio backdrop & lighting portraits",
-              "description": "One hour studio session."
-            }
-          },
-          {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "200.00",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Private styled set with props",
-              "description": "One hour styled session."
-            }
+            "@type": ["ProfessionalService", "LocalBusiness"],
+            "@id": "https://flutterbystudioga.com/#business",
+            "name": "Flutterby Studio",
+            "description": "Warm, artful portrait, family, mini-session, studio, and styled-set photography by Amber, serving Augusta, Grovetown, North Augusta, and the wider CSRA.",
+            "url": "https://flutterbystudioga.com/",
+            "mainEntityOfPage": { "@id": "https://flutterbystudioga.com/#webpage" },
+            "image": "https://flutterbystudioga.com/images/og-image.jpg",
+            "logo": "https://flutterbystudioga.com/images/logo.png",
+            "email": "flutterbystudio13@gmail.com",
+            "priceRange": "$50–$200+",
+            "currenciesAccepted": "USD",
+            "founder": { "@type": "Person", "name": "Amber", "jobTitle": "Photographer" },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Grovetown",
+              "addressRegion": "GA",
+              "postalCode": "30813",
+              "addressCountry": "US"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 33.4507, "longitude": -82.1943 },
+            "areaServed": [
+              { "@type": "City", "name": "Augusta, GA" },
+              { "@type": "City", "name": "Grovetown, GA" },
+              { "@type": "City", "name": "North Augusta, SC" },
+              { "@type": "AdministrativeArea", "name": "Central Savannah River Area (CSRA)" }
+            ],
+            "knowsAbout": [
+              "Portrait photography",
+              "Family photography",
+              "Newborn photography",
+              "Couples photography",
+              "Studio photography"
+            ],
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "description": "By appointment"
+            },
+            "sameAs": ["https://www.facebook.com/flutterbystudio13", "https://www.instagram.com/flutterbystudioga/"],
+            "makesOffer": [
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "100.00",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Portrait & couples session",
+                  "description": "One hour session."
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "150.00",
+                "itemOffered": { "@type": "Service", "name": "Family session", "description": "Two hour session." }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "50.00",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Mini session",
+                  "description": "A 20-minute session offered seasonally."
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "125.00",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Studio backdrop & lighting portraits",
+                  "description": "One hour studio session."
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "200.00",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Private styled set with props",
+                  "description": "One hour styled session."
+                }
+              }
+            ]
           }
         ]
       }
@@ -491,24 +508,33 @@
           <p class="eyebrow">Your turn</p>
           <h2 id="contact-title">Let’s make something you’ll love.</h2>
           <p>Have a question, a Pinterest board, or a date in mind? I would love to hear from you.</p>
-          <!-- TODO before launch: sign up at https://web3forms.com and replace YOUR_WEB3FORMS_ACCESS_KEY with a real access key -->
-          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-            <input type="hidden" name="subject" value="New inquiry from the Flutterby Studio website" />
-            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" aria-hidden="true" />
-            <div class="form-row">
-              <label for="contact-name">Name</label>
-              <input id="contact-name" name="name" type="text" autocomplete="name" required />
+          <form class="contact-form" action="https://submit-form.com/QGJyevJGm" method="POST">
+            <p class="form-status form-error" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+            <div class="form-stage">
+              <div class="form-fields">
+                <div class="form-row">
+                  <label for="contact-name">Name</label>
+                  <input id="contact-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-row">
+                  <label for="contact-email">Email</label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="form-row">
+                  <label for="contact-message">What are you dreaming up?</label>
+                  <textarea id="contact-message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="button button-light" type="submit">Send</button>
+              </div>
+              <p
+                class="form-status form-success"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+                tabindex="-1"
+                hidden
+              ></p>
             </div>
-            <div class="form-row">
-              <label for="contact-email">Email</label>
-              <input id="contact-email" name="email" type="email" autocomplete="email" required />
-            </div>
-            <div class="form-row">
-              <label for="contact-message">What are you dreaming up?</label>
-              <textarea id="contact-message" name="message" rows="4" required></textarea>
-            </div>
-            <button class="button button-light" type="submit">Send</button>
           </form>
         </div>
         <div class="contact-actions">

@@ -9,6 +9,7 @@ A handcrafted, accessible, one-page photography site for Amber’s Flutterby Stu
 - `images/` — optimized, served photos, icons, promotion, and 1200×630 social image
 - `design/` and `research/` — unserved source materials and working references
 - `llms.txt`, `robots.txt`, `sitemap.xml` — answer-engine and search discovery
+- `DEPLOYMENT.md` — GitHub Pages and Namecheap go-live runbook
 - `tests/a11y/` — axe-core, Pa11y, and keyboard checks
 - `.github/workflows/deploy-pages.yml` — quality-gated GitHub Pages deployment
 
@@ -28,7 +29,8 @@ Dependencies were intentionally not installed during the initial build.
 ## Deploy
 
 1. Push to `main` on `git@github.com:grndlvl/flutterby.git`.
-2. In GitHub, choose **Settings → Pages → Source: GitHub Actions**.
+2. Confirm the **Validate and deploy GitHub Pages** workflow succeeds.
+3. Complete the custom-domain steps in [`DEPLOYMENT.md`](DEPLOYMENT.md).
 
 The workflow deploys only after HTML/CSS/format linting and axe-core/Pa11y/keyboard checks pass. It assembles a clean `_site` artifact containing only public site files, so `design/`, `research/`, tests, and tooling are not served.
 
@@ -45,12 +47,12 @@ Amber’s About portrait is from her confirmed Instagram post at `https://www.in
 ## ⚠️ Verify before launch
 
 - Confirm Amber approves every photo for public website use and that image provenance/permissions are correct.
-- The configured public URL is `https://grndlvl.github.io/flutterby/`; update canonical, Open Graph, JSON-LD, and sitemap URLs together if the domain changes.
+- The configured public URL is `https://flutterbystudioga.com/`.
 - Confirm the repository’s default deployment branch is `main`.
 - Confirm `flutterbystudio13@gmail.com` is the preferred public email and the Facebook and Instagram profiles are the preferred contact routes.
 - Confirm all prices, inclusions, retainer terms, and album/USB extras remain current. They were transcribed conservatively from the supplied pricing guide.
 - Confirm whether “Flutterby Studio,” “Flutterby Photography by Amber,” or another name is the official display/business name.
 - Confirm the service area now claimed for local SEO (Augusta, Grovetown, North Augusta, and the CSRA generally) is accurate and complete.
-- Set a real Web3Forms access key in the contact form (search `index.html` for `YOUR_WEB3FORMS_ACCESS_KEY`) — get one free at https://web3forms.com before launch, or swap the form for a different backend.
+- Confirm the Formspark contact form submission and notification settings before launch.
 - Confirm whether the testimonial in "In their words" may be attributed by name/handle, or should stay anonymized as "A Flutterby Studio client" (source screenshot: `research/486997795_1411613440124850_7671232846129551128_n.jpg`).
 - Install dependencies and run the required local quality gates before treating the site as launch-ready.

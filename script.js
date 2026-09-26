@@ -34,6 +34,60 @@ document.addEventListener('keydown', (event) => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
+const contactForm = document.querySelector('.contact-form');
+
+if (contactForm) {
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const formFields = contactForm.querySelector('.form-fields');
+  const successStatus = contactForm.querySelector('.form-success');
+  const errorStatus = contactForm.querySelector('.form-error');
+  const defaultButtonLabel = submitButton.textContent;
+
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (submitButton.disabled) return;
+
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending…';
+    contactForm.setAttribute('aria-busy', 'true');
+    contactForm.classList.remove('is-complete');
+    errorStatus.hidden = true;
+    errorStatus.classList.remove('is-visible');
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(Object.fromEntries(new FormData(contactForm))),
+      });
+
+      if (!response.ok) throw new Error(`Form submission failed with status ${response.status}`);
+
+      contactForm.reset();
+      formFields.setAttribute('inert', '');
+      successStatus.textContent = 'Thank you! Your message was sent. I’ll be in touch soon.';
+      successStatus.hidden = false;
+      requestAnimationFrame(() => {
+        contactForm.classList.add('is-complete');
+        successStatus.classList.add('is-visible');
+        successStatus.focus();
+      });
+    } catch (error) {
+      console.error(error);
+      errorStatus.textContent = 'Sorry, your message could not be sent. Please try again.';
+      errorStatus.hidden = false;
+      requestAnimationFrame(() => errorStatus.classList.add('is-visible'));
+    } finally {
+      contactForm.removeAttribute('aria-busy');
+      submitButton.disabled = false;
+      submitButton.textContent = defaultButtonLabel;
+    }
+  });
+}
+
 // Subtle reveal-on-scroll. Gated behind reduced-motion + JS + IntersectionObserver,
 // so content is always visible if any of those are unavailable.
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

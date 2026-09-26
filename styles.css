@@ -542,16 +542,30 @@ h1 em {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
   max-width: 32rem;
 }
 
-.hp-field {
-  position: absolute;
-  width: 1px;
-  height: 1px;
+.form-stage {
+  display: grid;
+  padding: 8px;
+  margin: -8px;
   overflow: hidden;
-  left: -9999px;
+}
+
+.form-fields,
+.form-success {
+  grid-area: 1 / 1;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    opacity 0.32s ease,
+    transform 0.48s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-row {
@@ -579,6 +593,84 @@ h1 em {
   align-self: flex-start;
   border: none;
   cursor: pointer;
+}
+
+.contact-form .button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.contact-form.is-complete .form-fields {
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+
+.form-status {
+  color: var(--forest-dark);
+  background: var(--cream);
+  border: 2px solid var(--sage);
+  border-left-width: 0.5rem;
+  box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 0.2);
+}
+
+.form-error {
+  max-height: 0;
+  padding: 0 clamp(1.25rem, 4vw, 2rem);
+  margin: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  border-width: 0;
+  transition:
+    max-height 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+    margin 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+    border-width 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease 0.08s,
+    transform 0.36s ease 0.06s;
+}
+
+.form-error.is-visible {
+  max-height: 15rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  margin-bottom: 1.2rem;
+  opacity: 1;
+  transform: translateY(0);
+  border-width: 2px;
+  border-left-width: 0.5rem;
+  border-color: var(--blush);
+}
+
+.form-success {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  margin: 0;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  opacity: 0;
+  transform: translateX(2rem);
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.35;
+  transition:
+    opacity 0.32s ease 0.1s,
+    transform 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-success.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.form-error[hidden],
+.form-success[hidden] {
+  display: none;
+}
+
+.form-success:focus {
+  outline: 3px solid var(--forest-dark);
+  outline-offset: -7px;
+  box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 0.2);
 }
 
 footer {
