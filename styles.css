@@ -593,6 +593,7 @@ h1 em {
   align-self: flex-start;
   border: none;
   cursor: pointer;
+  margin-top: 0.8rem;
 }
 
 .contact-form .button:disabled {

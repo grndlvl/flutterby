@@ -13,13 +13,31 @@ test('publishes dated JSON-LD metadata', async ({ page }) => {
     .locator('script[type="application/ld+json"]')
     .evaluate((script) => JSON.parse(script.textContent));
   const webPage = structuredData['@graph'].find((entity) => entity['@type'] === 'WebPage');
+  const faqPage = structuredData['@graph'].find((entity) => entity['@type'] === 'FAQPage');
   const business = structuredData['@graph'].find((entity) => entity['@id'].endsWith('#business'));
+  const visibleFaqs = await page.locator('.faq-list details').evaluateAll((details) =>
+    details.map((item) => ({
+      question: item.querySelector('summary').textContent.replace(/\s+/g, ' ').trim(),
+      answer: item.querySelector('p').textContent.replace(/\s+/g, ' ').trim(),
+    })),
+  );
 
   expect(webPage.datePublished).toBe('2026-09-26');
   expect(webPage.dateModified).toBe('2026-09-26');
   expect(webPage.lastReviewed).toBe('2026-09-26');
   expect(webPage.mainEntity['@id']).toBe(business['@id']);
+  expect(webPage.hasPart['@id']).toBe(faqPage['@id']);
   expect(business.mainEntityOfPage['@id']).toBe(webPage['@id']);
+  expect(faqPage.datePublished).toBe('2026-09-26');
+  expect(faqPage.dateModified).toBe('2026-09-26');
+  expect(faqPage.lastReviewed).toBe('2026-09-26');
+  expect(faqPage.isPartOf['@id']).toBe(webPage['@id']);
+  expect(
+    faqPage.mainEntity.map((item) => ({
+      question: item.name,
+      answer: item.acceptedAnswer.text,
+    })),
+  ).toEqual(visibleFaqs);
 });
 
 test('supports keyboard navigation and mobile menu', async ({ page }) => {
@@ -64,6 +82,15 @@ test('keeps the contact form focus ring inside the transition stage', async ({ p
   const stageBox = await stage.boundingBox();
   expect(fieldBox.x - stageBox.x).toBeGreaterThanOrEqual(8);
   expect(stageBox.x + stageBox.width - (fieldBox.x + fieldBox.width)).toBeGreaterThanOrEqual(8);
+});
+
+test('visually separates the message field from the send button', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+  const messageBox = await page.locator('#contact-message').boundingBox();
+  const buttonBox = await page.locator('.contact-form button[type="submit"]').boundingBox();
+
+  expect(buttonBox.y - (messageBox.y + messageBox.height)).toBeGreaterThanOrEqual(31);
 });
 
 test('submits the contact form with AJAX and shows an inline confirmation', async ({ page }) => {
